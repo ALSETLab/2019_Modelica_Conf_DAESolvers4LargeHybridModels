@@ -45,8 +45,11 @@ Insert a PwFault component (see procedure below) in `Nordic44_Original_Case` and
 ![fault](./Figs/10_faultbus.png 'Fault Bus')
 
 - The EXST1 controller model includes an ``if-elseif-else`` statement that will change the output of the model depending on the value of the generator field voltage. This creates an event that depends on the value of the state of `Vm1` in the figure below.
+
 ![ecs](./Figs/11_ECS.png 'ECS')
+
 Inspecting the text view of the model, it can be observed that the value of the parameter `K_C` has been changed from 0.2 to 1.5 so that the condition `EFD > ECOMP*VRMAX – K_C*XADIFD` is fulfilled more easily and therefore trigger a state event quickly.
+
 ![ecs](./Figs/12_ECS_code.png 'ECS')
 
 - To trigger the state event, a fault model (pwFault) was added to bus 5603 near this new generator, as shown in the first figure of this section. The fault settings are shown next:
