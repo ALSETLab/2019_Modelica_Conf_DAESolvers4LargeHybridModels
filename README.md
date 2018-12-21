@@ -1,6 +1,6 @@
 # Modelica Models from "DAE Solvers for Large-Scale Hybrid Models"
 
-This repository contains specialized versions of the the Nordic44 (N44) power system model used for simulation in the following paper (to be) presented in the [International Modelica Conference 21019](https://modelica.org/events/modelica2019):
+This repository contains specialized versions of the the Nordic44 (N44) power system model, from the [OpenIPSL](http://openmodelica.org/) library, which has been modified and used for simulation in the following paper (to be) presented in the [International Modelica Conference 21019](https://modelica.org/events/modelica2019):
 
 > Erik Henningsson, Hans Olsson and Luigi Vanfretti, "DAE Solvers for Large-Scale Hybrid Models," Proceedings of the 13th International Modelica Conference, Regensburg, Germany, March 4–6, 2019.
 
@@ -13,6 +13,11 @@ Using Dymola 2019 FD01 or newer, , follow the steps below:
 - Load the OpenIPSL library distributed with this repository.
 - File/Open `./package.mo`
 - To be completed
+
+## Modifications made to the N44 model to introduce state events
+To create a state event a new electric power generator at bus 5610 was included. The generator is equipped with a controller modeled using the EXST1 "IEEE Type AC2A Excitation System" model from OpenIPSL. In addition, to trigger the state event, a fault model (pwFault) was added to bus 5603 near this new generator, as shown in the following figure.
+
+
 
 
 ## Development and contribution
