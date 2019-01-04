@@ -1,6 +1,6 @@
 # Modelica Models from "DAE Solvers for Large-Scale Hybrid Models"
 
-This repository contains specialized versions of the the Nordic44 (N44) power system model, from the [OpenIPSL](http://openmodelica.org/) library, which has been modified and used for simulation in the following paper (to be) presented in the [International Modelica Conference 21019](https://modelica.org/events/modelica2019):
+This repository contains specialized versions of the the Nordic44 (N44) power system model, from the [OpenIPSL](https://github.com/OpenIPSL/OpenIPSL) library, which has been modified and used for simulation in the following paper (to be) presented in the [International Modelica Conference 2019](https://modelica.org/events/modelica2019):
 
 > Erik Henningsson, Hans Olsson and Luigi Vanfretti, "DAE Solvers for Large-Scale Hybrid Models," Proceedings of the 13th International Modelica Conference, Regensburg, Germany, March 4–6, 2019.
 
@@ -8,7 +8,7 @@ Please see the full paper on the scope of usage for the models. You can download
 
 
 ## How to Simulate it?
-Using Dymola 2019 FD01 or newer, , follow the steps below:
+Using Dymola 2019 FD01 or newer, follow the steps below:
 - Load the OpenIPSL library distributed with this repository under `./Models/` by uncompressing the .zip file `OpenIPSL-master.zip`, in your local drive.
 - In Dymola, File/Open `./OpenIpSL-master/OpenIPSL/package.mo`
 - In Dymola, File/Open the N44 package `./N44/package.mo`
