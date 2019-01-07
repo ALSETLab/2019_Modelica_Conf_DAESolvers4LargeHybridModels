@@ -28,9 +28,9 @@ Using Dymola 2019 or newer, follow the steps below:
 
 
 ## Models used for the publication
-The models that were used in the experiments section of the article can be found in the package `Nordi44_DAEModeTestCases.mo`. These are `Nordic44_Original_Case_Line_Opening`, `Nordic44_Original_Case_Bus_Fault`, and `Nordic44_Base_Case_StateEvents3`. The Dymola experiment annotations have been set up in these models as to reproduce the DAE mode test cases in the publication.
+The models that were used in the experiments section of the article can be found in the package `Nordic44_DAEModeTestCases.mo`. These are `Nordic44_Original_Case_Line_Opening`, `Nordic44_Original_Case_Bus_Fault`, and `Nordic44_Base_Case_StateEvents3`. The Dymola experiment annotations have been set up in these models as to reproduce the DAE mode test cases in the publication.
 
-In the following sections we outline instructions on how to modify the original N44 models to recreate these test cases.
+These three models can be directly used out-of-the-box to recreate the experiments of the article. However, in the following sections we also outline instructions on how to modify the original N44 models to recreate these test cases.
 
 
 ## Reproducing results from previous work
