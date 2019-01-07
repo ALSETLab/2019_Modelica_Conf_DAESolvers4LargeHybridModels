@@ -8,7 +8,9 @@ Please see the full paper on the scope of usage for the models. You can download
 
 
 ## How to Simulate it?
-Using Dymola 2019 FD01 or newer, follow the steps below:
+The DAE mode functionality demonstrated by the models in this repository was introduced in Dymola 2019 and 3DEXPERIENCE 2019x (DBM, Dynamic Behavior Modeling). We exemplify how to simulate the models using Dymola.
+
+Using Dymola 2019 or newer, follow the steps below:
 - Load the OpenIPSL library distributed with this repository under `./Models/` by uncompressing the .zip file `OpenIPSL-master.zip`, in your local drive.
 - In Dymola, File/Open `./OpenIpSL-master/OpenIPSL/package.mo`
 - In Dymola, File/Open the N44 package `./N44/package.mo`
@@ -23,6 +25,12 @@ Using Dymola 2019 FD01 or newer, follow the steps below:
 - Simulate and you shall obtain the results shown below.
 
 ![N44package_sim](./Figs/01_sim.png 'N44 State Events - Sample Simulation')
+
+
+## Models used for the publication
+The models that were used in the experiments section of the article can be found in the package `Nordi44_DAEModeTestCases.mo`. These are `Nordic44_Original_Case_Line_Opening`, `Nordic44_Original_Case_Bus_Fault`, and `Nordic44_Base_Case_StateEvents3`. The Dymola experiment annotations have been set up in these models as to reproduce the DAE mode test cases in the publication.
+
+In the following sections we outline instructions on how to modify the original N44 models to recreate these test cases.
 
 
 ## Reproducing results from previous work
