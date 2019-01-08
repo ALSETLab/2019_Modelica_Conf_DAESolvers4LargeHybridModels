@@ -1,6 +1,6 @@
 # Modelica Models from "DAE Solvers for Large-Scale Hybrid Models"
 
-This repository contains specialized versions of the the Nordic44 (N44) power system model, from the [OpenIPSL](http://openmodelica.org/) library, which has been modified and used for simulation in the following paper (to be) presented in the [International Modelica Conference 21019](https://modelica.org/events/modelica2019):
+This repository contains specialized versions of the the Nordic44 (N44) power system model, from the [OpenIPSL](https://github.com/OpenIPSL/OpenIPSL) library, which has been modified and used for simulation in the following paper (to be) presented in the [International Modelica Conference 2019](https://modelica.org/events/modelica2019):
 
 > Erik Henningsson, Hans Olsson and Luigi Vanfretti, "DAE Solvers for Large-Scale Hybrid Models," Proceedings of the 13th International Modelica Conference, Regensburg, Germany, March 4–6, 2019.
 
@@ -8,7 +8,9 @@ Please see the full paper on the scope of usage for the models. You can download
 
 
 ## How to Simulate it?
-Using Dymola 2019 FD01 or newer, , follow the steps below:
+The DAE mode functionality demonstrated by the models in this repository was introduced in Dymola 2019 and 3DEXPERIENCE 2019x (DBM, Dynamic Behavior Modeling). We exemplify how to simulate the models using Dymola.
+
+Using Dymola 2019 or newer, follow the steps below:
 - Load the OpenIPSL library distributed with this repository under `./Models/` by uncompressing the .zip file `OpenIPSL-master.zip`, in your local drive.
 - In Dymola, File/Open `./OpenIpSL-master/OpenIPSL/package.mo`
 - In Dymola, File/Open the N44 package `./N44/package.mo`
@@ -23,6 +25,12 @@ Using Dymola 2019 FD01 or newer, , follow the steps below:
 - Simulate and you shall obtain the results shown below.
 
 ![N44package_sim](./Figs/01_sim.png 'N44 State Events - Sample Simulation')
+
+
+## Models used for the publication
+The models that were used in the experiments section of the article can be found in the package `Nordic44_DAEModeTestCases.mo`. These are `Nordic44_Original_Case_Line_Opening`, `Nordic44_Original_Case_Bus_Fault`, and `Nordic44_Base_Case_StateEvents3`. The Dymola experiment annotations have been set up in these models as to reproduce the DAE mode test cases in the publication.
+
+These three models can be directly used out-of-the-box to recreate the experiments of the article. However, in the following sections we also outline instructions on how to modify the original N44 models to recreate these test cases.
 
 
 ## Reproducing results from previous work
