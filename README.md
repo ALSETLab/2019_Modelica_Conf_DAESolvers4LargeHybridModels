@@ -4,7 +4,7 @@ This repository contains specialized versions of the the Nordic44 (N44) power sy
 
 > Erik Henningsson, Hans Olsson and Luigi Vanfretti, "DAE Solvers for Large-Scale Hybrid Models," Proceedings of the 13th International Modelica Conference, Regensburg, Germany, March 4–6, 2019.
 
-Please see the full paper on the scope of usage for the models. You can download the full paper from the [conference website](https://modelica.org/events/modelica2019) when it becomes available. A pre-print is available under `./Doc/`; note that this is the version submitted for review, and not the final version of the paper, which you can obtain in the website cited above.
+Please see the full paper on the scope of usage for the models. You can download the full paper from the [conference website](https://modelica.org/events/modelica2019) when it becomes available, or from this repository under `./Paper/`. 
 
 
 ## How to Simulate it?
